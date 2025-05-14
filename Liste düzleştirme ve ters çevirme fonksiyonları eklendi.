@@ -17,10 +17,9 @@ print(flatten(lst))
 #Verilen listenin içindeki elemanları tersine döndüren bir fonksiyon yazın. 
 Eğer listenin içindeki elemanlar da liste içeriyorsa onların elemanlarını da tersine döndürün.
 
-
 def reverse_list(lst):
     reversed_list = []
-    
+
     for element in reversed(lst):
         if isinstance(element, list):
             reversed_list.append(reverse_list(element))
@@ -30,3 +29,5 @@ def reverse_list(lst):
 
 input_list = [[1, 2], [3, 4], [5, 6, 7]]
 print(reverse_list(input_list))
+
+
